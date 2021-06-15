@@ -1,0 +1,3 @@
+rootProject.name = 'Pooling problem'
+include 'src'
+
