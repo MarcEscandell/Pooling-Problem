@@ -1,8 +1,8 @@
-package com.petronas.pooling_problem;
+package com.petronas.opt.compiler.pooling_problem;
 
+import com.google.ortools.linearsolver.MPConstraint;
 import com.google.ortools.linearsolver.MPSolver;
 import com.google.ortools.linearsolver.MPVariable;
-import com.google.ortools.linearsolver.MPConstraint;
 
 /**
  * McCormickEnvDetails
@@ -12,7 +12,7 @@ public class McCormickEnvDetails extends LinearRelaxationDetails implements Line
     /**
      * Default constructor using linear relaxation common details
      */
-    public McCormickEnvDetails(LinearRelaxationDetails.Builder lrDetailsBuilder) {
+    public McCormickEnvDetails(Builder lrDetailsBuilder) {
         super(lrDetailsBuilder);
     }
 

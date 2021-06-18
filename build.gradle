@@ -1,27 +1,30 @@
 plugins {
-    id 'java'
+	id 'org.springframework.boot' version '2.5.1'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
 }
 
-group 'com.petronas.pooling_problem'
-version '0.0.1'
+group = 'com.petronas.opt'
+version = '0.0.1'
+sourceCompatibility = '11'
 
 repositories {
-    mavenCentral()
+	mavenCentral()
 }
 
 dependencies {
-    // Logger sl4j and logback
-    compile 'ch.qos.logback:logback-classic:1.2.3'
-    compile 'ch.qos.logback:logback-core:1.2.3'
-    compile 'org.slf4j:slf4j-api:1.7.25'
-    // Google OR-Tools
-    implementation 'com.google.ortools:ortools-java:9.0.9048'
 
-    // JUnit testing
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	// Logger sl4j and logback
+	implementation 'ch.qos.logback:logback-classic:1.2.3'
+	implementation 'ch.qos.logback:logback-core:1.2.3'
+	implementation'org.slf4j:slf4j-api:1.7.25'
+	// Google OR-Tools
+	implementation 'com.google.ortools:ortools-java:9.0.9048'
+
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 test {
-    useJUnitPlatform()
+	useJUnitPlatform()
 }

@@ -1,7 +1,7 @@
-package com.petronas.pooling_problem;
+package com.petronas.opt.compiler.pooling_problem;
 
-import com.google.ortools.linearsolver.MPVariable;
 import com.google.ortools.linearsolver.MPSolver;
+import com.google.ortools.linearsolver.MPVariable;
 
 /**
  * com.petronas.pooling_problem.LinearRelaxationDetails
@@ -10,7 +10,7 @@ import com.google.ortools.linearsolver.MPSolver;
  */
 public class LinearRelaxationDetails implements LinearRelaxation {
 
-    public static final double infinity = java.lang.Double.POSITIVE_INFINITY;
+    public static final double infinity = Double.POSITIVE_INFINITY;
     public final PiecewiseRelaxationScheme scheme;
     public final MPVariable x;
     public final MPVariable y;

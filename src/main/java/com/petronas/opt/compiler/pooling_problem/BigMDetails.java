@@ -1,8 +1,8 @@
-package com.petronas.pooling_problem;
+package com.petronas.opt.compiler.pooling_problem;
 
+import com.google.ortools.linearsolver.MPConstraint;
 import com.google.ortools.linearsolver.MPSolver;
 import com.google.ortools.linearsolver.MPVariable;
-import com.google.ortools.linearsolver.MPConstraint;
 
 import java.util.ArrayList;
 
@@ -26,7 +26,7 @@ public class BigMDetails extends LinearRelaxationDetails implements LinearRelaxa
     /**
      * Default constructor using linear relaxation common details
      */
-    public BigMDetails(LinearRelaxationDetails.Builder lrDetaBuilder) {
+    public BigMDetails(Builder lrDetaBuilder) {
         super(lrDetaBuilder);
         // Define smallest possible M coefficient
         M = (xUpper - xLower) * (yUpper - yLower);

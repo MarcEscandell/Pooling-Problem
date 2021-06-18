@@ -1,4 +1,4 @@
-package com.petronas.pooling_problem;
+package com.petronas.opt.compiler.pooling_problem;
 import com.google.ortools.linearsolver.MPSolver.OptimizationProblemType;
 
 /**
