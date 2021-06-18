@@ -13,3 +13,8 @@ The model has been developed in the **java** language following strong OOP (obje
 The optimization solver leverages on multiple _open-sourced_ packages that are interfaced using **Google OR-Tools** library.
 
 To ease its deployment, a **Docker** container has been set and it's available at _Docker Hub_ repository under _marcescandellmari/or-tools_. There's also a _Dockerfile_ for model deployment.
+
+### Implementation details
+The different linearization techniques have been tested in an example that is listed under _Introduction to Optimization Modelling_ slides produced and delivered by _Dr. Khor Cheng Seong_ at _Chemical Engineering Deparment, University Teknologi PETRONAS_.
+
+Please refer to _slide n.9_ under _Working Session 1 (extension) - Refinery blending_ for further details on problem characteristics such as data used and network. Document can be found at `docs/[DS-OptTraining_20191006_v4.pdf]`.
